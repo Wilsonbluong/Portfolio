@@ -1,14 +1,4 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,11 +8,11 @@
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
     <!-- Put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Wilson Luong | Developer</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="Wilson Luong | Developer" />
 
     <!-- Required librarys -->
     <link
@@ -35,20 +25,39 @@
     </script>
 
     <!-- Remove this script once you setup your custom portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head> -->
 
-  <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
+
+        <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, I'm <span class="text-color-main">Wilson Luong</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a Full Stack Developer.
         </h1>
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
@@ -78,19 +87,24 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
+                Hello! I'm Wilson, a web developer based in Los Angeles, CA.
               </p>
               <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
+              I enjoy creating things that live on the internet, whether that be websites, 
+              applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
               </p>
+              <p class="about-wrapper__info-text">
+              Here are a few technologies I've been working with recently:
+              </p>
+              <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>HTML & (S)CSS</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Django</li>
+              </ul>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="https://docs.google.com/document/d/1tr5Kau-dZy06l9LTryN9LTZfA8722dHxbksYEpqc1w0/edit?usp=sharing">
                   View Resume
                 </a>
               </span>
@@ -113,20 +127,17 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">Watchflix</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    A Netflix clone built using React and Firebase.
+                    The web app allows users to log in and watch their favorite show or film!
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://my-react-watchflix.netlify.app/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Wilsonbluong/Watchflix">
                   Source Code
                 </a>
               </div>
@@ -135,7 +146,7 @@
               <div class="project-wrapper__image">
                 <a href="#!" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/netflix2.jpg" />
                   </div>
                 </a>
               </div>
@@ -147,29 +158,25 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">Snapgram</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    A Instagram-like clone using React and Firebase. Upload your favorite memories using this app!
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://firegram-85368.web.app/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Wilsonbluong/snapgram">
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://firegram-85368.web.app/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/snapgram.jpg" />
                   </div>
                 </a>
               </div>
@@ -181,7 +188,37 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">BeachResorts.com</h3>
+                <div>
+                  <p class="mb-4">
+                    A beach resort webpage built using React. Users are able to pick their perfect getaway
+                    by filtering through room that meet their needs. Au revoir!
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://react-beach-resort-page.netlify.app/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Wilsonbluong/Beach-Resort">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://my-shoe-store.netlify.app/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/beach-resort.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <!-- <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Kicks R Us</h3>
                 <div>
                   <p class="mb-4">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -191,45 +228,47 @@
                     itaque molestiae.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://my-shoe-store.netlify.app/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Wilsonbluong/Shoe-Store">
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://my-shoe-store.netlify.app/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/sneakers.jpg" />
                   </div>
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- /END Project -->
         </div>
       </div>
     </section>
     <!-- /END Projects Section -->
 
+    <!-- More Projects -->
+
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">
-          Contact
+          Get In Touch
         </h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">
-            [Put your call to action here]
+            Have a question or want to work together?
           </p>
           <a
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:wilsonbluong@gmail.com"
+            >Say Hello</a
           >
         </div>
       </div>
@@ -243,16 +282,16 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a href="#!" target="_blank">
+          <a href="https://twitter.com/Wbluong" target="_blank">
             <i class="fa fa-twitter fa-inverse"></i>
           </a>
-          <a href="#!" target="_blank">
+          <!-- <a href="#!" target="_blank">
             <i class="fa fa-codepen fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
+          </a> -->
+          <a href="https://www.linkedin.com/in/wilsonbluong/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a href="#!" target="_blank">
+          <a href="https://github.com/Wilsonbluong" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
@@ -261,31 +300,10 @@
 
         <!-- If you give me some credit, will be huge for me :) -->
         <p class="footer__text">
-          © 2020 - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
+          © 2021 Designed & Built by Wilson Luong
           </a>
         </p>
-
-        <!-- Remove this paragraph once you setup your custom portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobidev/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
+        
       </div>
     </footer>
     <!-- /END Footer Section -->
